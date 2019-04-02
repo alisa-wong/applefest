@@ -1,0 +1,865 @@
+body {
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+/** Font Source: https://www.1001fonts.com/montserrat-font.html*/
+@font-face {
+  font-family: Montserrat;
+  src: url("../montserrat/Montserrat-Regular.ttf");
+}
+
+figcaption, cite {
+  font-size: 12px;
+  text-align: right;
+}
+
+figcaption, cite a:link {
+  font-style: italic;
+}
+
+p.citation a:link, p.citation a:visited {
+  color: black;
+}
+
+.close p.citation a:visited, .close p.citation a:link {
+  color: white;
+}
+
+.citation {
+  text-align: right;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.top h1 {
+  font-size: 60px;
+  margin: auto;
+  padding: 120px 0px;
+}
+
+/** Navigation for all pages */
+
+nav li {
+  display: inline;
+  padding-right: 30px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  justify-content: flex-end;
+  flex-flow: wrap;
+}
+
+#logo {
+  height: 75px;
+  width: 75px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.tabs {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/** Home Page Styling*/
+
+.home-body {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.home {
+  background-image: url("../images/apples.jpg"); /** Source: (original work) Alisa Wong */
+  background-position: center;
+  color: white;
+}
+
+.home a:visited, .home a:link {
+  color: white;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+}
+
+.home h1 {
+  margin: 0px;
+  font-size: 60px;
+  margin: 200px 0px 0px 0px;
+}
+
+.home p {
+  font-size: 24px;
+  margin: auto;
+}
+
+p.citation {
+  font-size: 12px;
+}
+
+.home-cite p {
+  margin: 250px 10px auto auto;
+}
+
+.home-cite p.citation a:link, .home-cite p.citation a:visited {
+  color: white;
+}
+
+/** About Page Styling*/
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+}
+
+/** Centering text + background image for title of About*/
+.about-title {
+  background-image: url("../images/stand.jpg"); /** Image Source: https://theithacan.org/life-culture/apple-of-ithacas-eye-34th-annual-applefest/ */
+  background-position: center top;
+  color: white;
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 28px;
+  padding: 50px 0px 0px 0px;
+  margin: auto;
+  width: 75%;
+}
+
+.about-title strong {
+  font-size: 60px;
+}
+
+.about-title h2 {
+  margin: 30px 0px 50px 0px;
+}
+
+/** Formatting information on About*/
+.second {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.descrip {
+  width: 50%;
+  flex-grow: 4;
+}
+
+.descrip h3 {
+  margin: 10px 10px auto 10px;
+}
+
+.hours h3 {
+  margin: 5px 5px 2px 5px;
+}
+
+.descrip p {
+  margin: 0% 5%;
+}
+
+.times {
+  border-style: solid;
+  border-width: 2px;
+}
+
+.hours dl {
+  width: 200px;
+  margin: auto auto 5px 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/** Vendors/Performance Pages */
+
+.vendor-top {
+  background-image: url("../images/vendors.jpg"); /** Image Source:  https://www.downtownithaca.com/apple-harvest-festival/ */
+  background-position: top;
+  color: white;
+  text-align: center;
+}
+
+.perform-top {
+  background-image: url("../images/perform.jpg"); /** Image Source:  https://fuse.ithaca.edu/gallery/2142/ */
+  background-position: top;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  margin: 40px auto 10px auto;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
+.date {
+  border-style: solid;
+  padding: 10px;
+}
+
+.date p {
+  font-size: 14px;
+  margin: 0px;
+}
+
+.performance p {
+  margin: 0px;
+}
+
+.performance h2 {
+  margin: auto auto 10px 70px;
+}
+
+.location h2 {
+  padding: 0px;
+  margin: 50px 10px 0px 10px;
+}
+
+.schedule strong {
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center;
+  margin: 0px auto 30px auto;
+  padding: 0px 40px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 5px 5px;
+  text-align: center;
+}
+
+.performer p {
+  font-size: 12px;
+}
+
+.performer strong {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.row a {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  margin: 75px 10px auto 10px;
+}
+
+.row a:hover {
+  font-style: italic;
+}
+
+.image-sources {
+  border-style: solid;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sources {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.image-sources p {
+  font-size: 12px;
+  margin: 0px 20px 10px 20px;
+}
+
+.image-sources h3 {
+  margin: 10px 0px 10px 20px;
+}
+
+/** Pictures for Vendors */
+.f1 {
+  background-image: url("../images/eves.jpg");
+  /** Image Source: https://www.ithaca.com/news/the-donut-phenomenon/article_7a8835ea-bd0d-11e8-af2f-837b51a808f1.html */
+  background-position: top right;
+}
+
+.f2 {
+  background-image: url("../images/creek.jpg");
+  /** Image Source: https://indiancreekithaca.com/2011/10/14/apple-alert-pumpkin-panic-veggie-vicissitudes/#jp-carousel-13752 */
+  background-position: top right;
+}
+
+.f3 {
+  background-image: url("../images/coffee.jpg");
+  /** Image Source: https://www.tripadvisor.com/LocationPhotoDirectLink-g48406-d4789402-i307624853-Village_Bakery_and_Cafe-Pittsford_Finger_Lakes_New_York.html */
+  background-position: bottom left;
+}
+
+.f4 {
+  background-image: url("../images/grey.jpg");
+  /** Image Source: https://www.downtownithaca.com/36th-annual-apple-harvest-festival/ */
+  background-position: center;
+}
+
+.f5 {
+  background-image: url("../images/luna.jpg");
+  /** Image Source: https://cornellsun.com/2018/04/11/at-least-its-spring-at-lunas/ */
+  background-position: center;
+}
+
+.f6 {
+  background-image: url("../images/mac.jpg");
+  /** Image Source: https://www.downtownithaca.com/apple-harvest-festival/ */
+  background-position: left;
+}
+
+.f7 {
+  background-image: url("../images/sugar.jpg");
+  /** Image Source: http://schweigarts.com/product/creamed-honey-1lb/ */
+  background-position: center;
+}
+
+.f8 {
+  background-image: url("../images/shuck.jpg");
+  /** Image Source: https://www.instagram.com/p/BlOWLbuDlnw/?hl=en */
+  background-position: left bottom;
+}
+
+.f9 {
+  background-image: url("../images/silo.jpg");
+  /** Image Source: http://www.fingerlakesciderhouse.com/calendar/2018/8/19/silo-food-truck-benefit-at-the-finger-lakes-cider-house */
+}
+
+.f10 {
+  background-image: url("../images/thai.jpg");
+  /** Image Source: https://www.zomato.com/finger-lakes-region-ny/thai-basil-restaurant-ithaca */
+}
+
+.f11 {
+  background-image: url("../images/good.jpg");
+  /** Image Source: http://www.ilovethegoodtruck.com/ */
+  background-position: bottom;
+}
+
+.a1 {
+  background-image: url("../images/clay.jpg");
+  /** Image Source: https://www.amazon.com/handmade/ClayFormed-Artworks */
+  background-position: top;
+}
+
+.a2 {
+  background-image: url("../images/muckles.jpg");
+  /** Image Source:  https://www.facebook.com/MucklesInk/photos/pcb.2336116899763232/2336116796429909/?type=3&theater */
+}
+
+.a3 {
+  background-image: url("../images/hand.jpg");
+  /** Image Source:  https://www.instagram.com/p/BXn0TxTlqTY/ */
+}
+
+/** Pictures for Performers */
+
+.p1 {
+  background-image: url("../images/voicestream.jpg");
+  background-position: center;
+  /** Image Source:  https://theithacan.org/life-culture/ic-voicestream-holds-concert-for-planned-parenthood/ */
+}
+
+.p2 {
+  background-image: url("../images/grassanova.jpg");
+  /** Image Source:  https://www.flickr.com/photos/joeyz51/38902498602 */
+  background-position: center;
+}
+
+.p3 {
+  background-image: url("../images/b33t.jpg");
+  /** Image Source:  http://therangeithaca.com/event/lost-wax-collective-b33t-juic3 */
+  background-position: center;
+}
+
+.p4 {
+  background-image: url("../images/rachel.jpg");
+  /** Image Source:  https://experiencecortland.com/event/rachel-beverly-live-at-bru-64/ */
+  background-position: center;
+}
+
+.p5 {
+  background-image: url("../images/vitamin.jpg");
+  /** Image Source:  https://www.ithaca.com/news/vitamin-l-ithaca-young-people-sing-dance-and-learn-to/article_e09c724a-40e1-11e3-8f9f-0019bb2963f4.html */
+  background-position: center;
+}
+
+.p6 {
+  background-image: url("../images/vee.jpg");
+  /** Image Source:  https://www.cortlandpumpkinfest.org/entertainment/2017/10/8/vee-da-bee */
+}
+
+.p7 {
+  background-image: url("../images/mijail.jpg");
+  /** Image Source:  http://ithacafestival.org/2017-performances/mijail-martinez */
+}
+
+.p8 {
+  background-image: url("../images/burns.jpg");
+  /** Image Source: https://burnsandkristy.com/photos */
+}
+
+.p9 {
+  background-image: url("../images/june.jpg");
+  /** Image Source:  http://ithacafestival.org/2015-performances/june-chandani-belly-dance-troupe */
+  background-position: right;
+}
+
+.p10 {
+  background-image: url("../images/circus.jpg");
+  /** Image Source:  https://www.facebook.com/IthacaCollegeCircusClub/photos/a.578700752489234/578700505822592/?type=3&theater */
+}
+
+.p11 {
+  background-image: url("../images/danza.jpg");
+  /** Image Source:  http://ithacafestival.org/2017-performances/danza-romani-gypsy-dance */
+  background-position: center;
+}
+
+.p12 {
+  background-image: url("../images/flight.jpg");
+  /** Image Source:  https://www.ithaca.edu/hs/depts/theatre/mainstage/gallery/7658/ */
+  background-position: center bottom;
+}
+
+.p13 {
+  background-image: url("../images/blue.jpg");
+  /** Image Source:  http://blueskiesithaca.com/photos.php */
+  background-position: bottom right;
+}
+
+.p14 {
+  background-image: url("../images/jess.jpg");
+  /** Image Source:  https://nysmusic.com/2016/03/07/new-york-minute-a-chat-with-jess-novak/ */
+  background-position: center top;
+}
+
+.p15 {
+  background-image: url("../images/liam.jpg");
+  /** Image Source:  https://www.reverbnation.com/liamalone */
+}
+
+.p16 {
+  background-image: url("../images/science.jpg");
+  /** Image Source:  http://www.sciencecabaret.org/about/ */
+}
+
+.p17 {
+  background-image: url("../images/jazz.jpg");
+  /** Image Source:  https://www.ithaca.edu/music/live/2017_2018/20171209_jazzvocal/ */
+  background-position: bottom left;
+}
+
+.p18 {
+  background-image: url("../images/papa.jpg");
+  /** Image Source:  https://www.youtube.com/watch?v=yO_1Ede7mTE */
+}
+
+.p19 {
+  background-image: url("../images/neo.jpg");
+  /** Image Source:  https://www.facebook.com/NeoProjectBand/photos/a.108076382688145/1136455776516862/?type=3&theater */
+  background-position: center;
+}
+
+.p20 {
+  background-image: url("../images/zajal.jpg");
+  /** Image Source:  https://www.facebook.com/Miragebellydancetroupe/photos/a.429279402044/10154623687377045/?type=1&theater */
+}
+
+.p21 {
+  background-image: url("../images/mirage.jpg");
+  /** Image Source:  http://ithacafestival.org/2015-performances/mirage-belly-dancers-ithaca */
+  background-position: bottom right;
+}
+
+
+/** Visit Page */
+
+.visit-top {
+  background-image: url("../images/street.jpg"); /** Image Source:  https://www.downtownithaca.com/apple-harvest-festival/#food */
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.mid {
+  display: flex;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 0px 30px;
+}
+
+.left {
+  border-style: dashed;
+  border-width: 0px 1px 0px 0px;
+}
+
+.directions {
+  display: flex;
+  margin: 0px 0px 10px 0px;
+}
+
+.header {
+  margin: 0px 10px 0px 0px;
+}
+
+.mid h4 {
+  margin: 0px;
+}
+
+.mid p {
+  margin: 0px;
+}
+
+.directions ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.directions li {
+  margin: 0px 0px 5px 0px;
+}
+
+.directions strong {
+  font-style: italic;
+}
+
+.citation {
+  text-align: right;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom .hours {
+  margin: 75px 40px 10px auto;
+}
+
+.bottom p {
+  margin: 0px 30px 5px 30px;
+}
+
+.bottom p.citation {
+  margin: auto 20px 20px auto;
+}
+
+/** Start of Feedback Page */
+.form-top {
+  background-image: url("../images/festival.jpg"); /** Image Source:  https://www.downtownithaca.com/apple-harvest-festival/ */
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.formPara {
+  font-size: 18px;
+  text-align: center;
+  margin: 50px auto 10px auto;
+  padding: 0px 30px 0px 30px;
+}
+
+form {
+  width: 495px;
+  margin: auto auto 30px auto;
+}
+
+.question {
+  width: 175px;
+  text-align: left;
+}
+
+#form div {
+  display: flex;
+  padding-top: 10px;
+}
+
+.formBox, #form textarea, #checkDays {
+  width: 300px;
+}
+
+#checkDays {
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+#formDays div {
+  padding-top: 5px;
+}
+
+.option label {
+  font-size: 16px;
+  width: 200px;
+  display: inline;
+}
+
+#form textarea {
+  height: 80px;
+}
+
+#form button {
+  margin-top: 10px;
+  margin-left: 430px;
+}
+
+.feedback {
+  width: 300px;
+  font-size: 12px;
+  margin: 0px 0px 20px 180px;
+  color: #CC6461;
+  font-style: italic;
+}
+
+.submit-feedback {
+  width: 200px;
+  font-size: 12px;
+  margin: 0px 0px 300px 285px;
+  color: #CC6461;
+  font-style: italic;
+}
+
+::placeholder {
+  font-family: Montserrat;
+  src: url("../montserrat/Montserrat-Regular.ttf");
+  /** Font Source: https://www.1001fonts.com/montserrat-font.html*/
+  color: #c9c9c9;
+}
+
+textarea, input {
+  font-family: Montserrat;
+  src: url("../montserrat/Montserrat-Regular.ttf");
+  /** Font Source: https://www.1001fonts.com/montserrat-font.html*/
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+/** End of Feedback Page */
+
+/** Bottom of Pages */
+.close {
+  background-color: #CC6461;
+  padding: 50px 20px;
+}
+
+.close p {
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+
+/** Responsive Design for Mobile */
+@media (max-width: 600px) {
+
+  /** Nav Styling - centering tabs and logo*/
+  .nav {
+    flex-direction: column;
+  }
+
+  #logo {
+    margin: 0 43%;
+  }
+
+  nav ul {
+    margin: 5px 0px 10px 0px;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  nav li {
+    font-size: 18px;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+
+  /** Home Page */
+  .home {
+    background-image: url("../images/apples2.jpg"); /** Source: (original work) Alisa Wong */
+    background-position: center;
+  }
+
+  .title h1 {
+    margin: 300px auto auto auto;
+  }
+
+  .hours h3 {
+    margin: 0px 0px 0px 5px;
+  }
+
+  .hours {
+    flex-grow: 1;
+  }
+
+  .home-cite p {
+    margin: 350px 10px auto auto;
+  }
+
+  /** Visit Page */
+  .mid {
+    flex-direction: column;
+  }
+
+  .left {
+    border-style: none;
+    margin: 0px 0px 10px 0px;
+  }
+
+  /** Feedback Page */
+  form {
+    width: 400px;
+    margin: auto;
+  }
+
+  .question {
+    width: 350px;
+  }
+
+  #form div {
+    width: 350px;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  #checkDays div {
+    flex-direction: row;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  #formDays div {
+    padding: 0px;
+  }
+
+
+  .formBox, #form textarea, #checkDays {
+    width: 350px;
+    margin: auto;
+  }
+
+  .formPara {
+    margin: 30px 0px;
+  }
+
+  #checkDays {
+    margin-top: auto;
+    flex-direction: row;
+    width: auto;
+  }
+
+  #form button {
+    margin-left: 330px;
+    margin-bottom: 50px;
+  }
+
+  .feedback {
+    width: 350px;
+    margin: 0px auto 20px auto;
+  }
+
+  /** About Page */
+
+  .hours h3 {
+    margin: 10px 10px auto 10px;
+  }
+
+  .hours dl {
+    margin: auto 10px 10px 10px;
+  }
+
+  /** Increasing Font Sizes */
+  .second h3 {
+    font-size: 24px;
+  }
+
+  .second p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .row p {
+    font-size: 18px;
+  }
+
+  .performer p {
+    font-size: 14px;
+  }
+
+  .performer strong {
+    font-size: 18px;
+  }
+
+  .visit h2 {
+    font-size: 32px;
+  }
+
+  .visit h3 {
+    font-size: 24px;
+  }
+
+  .visit h4, p, ul {
+    font-size: 18px;
+  }
+
+  #form label {
+    font-size: 18px;
+  }
+
+  #form option {
+    font-size: 14px;
+  }
+
+  .formPara {
+    font-size: 24px;
+  }
+
+  .feedback {
+    font-size: 14px;
+  }
+
+}

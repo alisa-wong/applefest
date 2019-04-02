@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+  <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="scripts/validation.js" type="text/javascript"></script>
+</head>
+<body class>
+
+  <div class="nav">
+    <div class="logo">
+      <!-- Image Source: Alisa Wong (original work created on Canva.com) -->
+      <a href="index.html"><img src="images/logo.png" alt="Ithaca Apple Harvest Festival" id="logo"/></a>
+    </div>
+
+    <div class="tabs">
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vendors.html">Vendors</a></li>
+          <li><a href="performance.html">Performance</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div>
+    <div class="top form-top">
+      <h1>Feedback Form</h1>
+    </div>
+
+    <div>
+      <p class="citation">Source:
+        <cite><a href="https://www.downtownithaca.com/apple-harvest-festival/#food ">Downtown Ithaca</a></cite>
+      </p>
+    </div>
+
+    <p class="formPara">Let us know of any feedback you have so that we can make the Apple Harvest Festival even better for next year!</p>
+
+    <form id="form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate>
+
+      <div id="formDays">
+        <div class="check">
+          <p class="question">What days did you attend the Ithaca Apple Harvest Festival 2018?*</p>
+        </div>
+        <div id="checkDays">
+          <div class="option">
+            <input type="checkbox" id="days" name="days[]" value="28">
+            <label for="days">Sept. 28, 2018</label>
+          </div>
+
+          <div class="option">
+            <input type="checkbox" id="days" name="days[]" value="29">
+            <label for="days">Sept. 29, 2018</label>
+          </div>
+
+          <div class="option">
+            <input type="checkbox" id="days" name="days[]" value="30">
+            <label class="option" for="days">Sept. 30, 2018</label>
+          </div>
+        </div>
+      </div>
+
+      <p id="daysError" class="feedback hidden">Please select day(s) you attended the Apple Harvest Festival</p>
+
+      <div>
+        <label class="question" for="general">What did you like/dislike at this year's festival?*</label>
+        <textarea required name="general" id="general" placeholder="Let us know of at least one thing!"></textarea>
+      </div>
+
+      <p id="generalError" class="feedback hidden">Please let us know of anything you liked/disliked about the festival</p>
+
+      <div>
+        <label class="question" for="improve">Do you have any suggested improvements?</label>
+        <textarea name="improve" id="improve"></textarea>
+      </div>
+
+      <div>
+        <label class="question" for="vendor">Request Vendors:</label>
+        <input class="formBox" type="text" name="vendor" id="vendor"/>
+      </div>
+
+      <div>
+        <label class="question" for="performer">Request Performers:</label>
+        <input class="formBox" type="text" name="performer" id="performer"/>
+      </div>
+
+      <div>
+        <label class="question" for="other">Other Comments</label>
+        <textarea name="other" id="other"></textarea>
+      </div>
+
+      <button type="submit" class="submit">Submit</button>
+      <p class="submit-feedback hidden">Please fill out the required fields</p>
+    </form>
+
+    <div class="close">
+      <p>2018 Ithaca Apple Harvest Festival</p>
+      <p class="citation"> Font Source:
+        <cite><a href="https://www.1001fonts.com/montserrat-font.html">1001 fonts</a></cite>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
